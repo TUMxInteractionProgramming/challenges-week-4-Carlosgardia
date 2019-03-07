@@ -27,6 +27,11 @@ button, strong {
     text-transform: uppercase;
 }
 
+/*CHANNEL LOCATION LINK*/
+#channel-location a{
+    text-decoration: none;
+}
+
 /* LAYOUT #5 #split */
 
 #channels {
@@ -92,9 +97,10 @@ h1 a {
 }
 
 h1 #channel-star {
-    /* #6 #liking #filled  */
+    /* #7 STAR CHANGED  */
     position:absolute;
     right: 16px;
+    font-size: 24px;
 }
 
 /* CHANNELS LIST */
@@ -127,11 +133,31 @@ li .channel-meta {
     position: absolute;
     right: 16px;
     top: 12px;
+    display: flex;
 }
 
-li img {
+/* #7 NEW STAR-CHEVRON */
+.fa-star, .fa-chevron-right, .fa-arrow-circle-right {
+    font-size: 24px;
+}
+
+/*BOXES MESSAGE-INFO IN CHANNELS*/
+.channel-meta div{
+    display: inline;
+    background-color:#3F51B5;
+    margin: 3px;
+    padding: 2px;
+    text-align: center;
+    font-size: small;
+    font-weight: normal;
+    color: white;
+    border-radius: 2px;
     vertical-align: middle;
 }
+
+/*li img {
+    vertical-align: middle;
+}*/
 
 li.selected {
     color: #3F51B5;
@@ -172,9 +198,10 @@ li.selected {
     border-bottom: 4px solid #3F51B5;
 }
 
-#tab-bar button img {
+#tab-bar button i {
     display: block;
     margin: 0 auto 4px auto;
+    font-size: 24px;
 }
 
 /* #5 CHAT BAR */
@@ -183,6 +210,7 @@ li.selected {
     /* #5 #smileys #override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
     flex-grow: 0;
+    font-size: 24px;
 }
 
 #emojis {
@@ -270,3 +298,16 @@ li.selected {
 .message.own {
     margin-left: 17.5%;
 }
+
+/*MESSAGE BOX */
+#chat-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#message_box{
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
